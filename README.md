@@ -12,27 +12,40 @@ README.md # Project documentation
 ```
 
 ## ⚙️ Setup
-Clone the repository and create a virtual environment:
+Clone the repository:
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/titanic-kaggle.git
 cd titanic-kaggle
 ```
 
-Install dependencies:
+Create and sync environment with uv:
 ```
-pip install -r requirements.txt
+uv sync
+```
+This will automatically create a virtual environment and install dependencies defined in pyproject.toml and locked in uv.lock.
+
+Activate the environment:
+```bash
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
+
+# Windows cmd
+.venv\Scripts\activate.bat
+
+# Linux / macOS
+source .venv/bin/activate
 ```
 ## 🚀 Usage
 
 Train and generate submission file with LightGBM:
 ```
-python train_LGBM.py
+uv run python train_LGBM.py
 ```
 
 Train and generate submission file with Random Forest:
 ```
-python train_RF.py
+uv run python train_RF.py
 ```
 Submission files will be saved as:
 ```

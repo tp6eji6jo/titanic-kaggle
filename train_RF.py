@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 train = pd.read_csv("C:/Users/User/Desktop/CGU/練習/dataset/train.csv")
 test  = pd.read_csv("C:/Users/User/Desktop/CGU/練習/dataset/test.csv")
-OUTPUT_CSV = "submission.csv"
+OUTPUT_CSV = "RF_submission.csv"
 
 TARGET = "Survived"
 

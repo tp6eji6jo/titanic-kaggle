@@ -6,8 +6,8 @@ from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from lightgbm import LGBMClassifier
 
-train = pd.read_csv("C:/Users/User/Desktop/CGU/練習/dataset/train.csv")
-test  = pd.read_csv("C:/Users/User/Desktop/CGU/練習/dataset/test.csv")
+train = pd.read_csv("data/train.csv")
+test  = pd.read_csv("data/test.csv")
 OUTPUT_CSV = "LightGBM_submission.csv"
 
 TARGET = "Survived"
